@@ -4,11 +4,12 @@
 const assert = require('assert')
 const ENCODE_OUTOFBOUNDS = 'The number to be encoded is out of bounds '
 
-/*
+/**
  * A URL safe char that is not part of the encoding table and
- * can be used as a separator
+ * can be used as a separator: `'*'`
  *
- * @name SEPARATOR
+ * @constant {String} SEPARATOR
+ * @default
  */
 const SEPARATOR = '*'
 

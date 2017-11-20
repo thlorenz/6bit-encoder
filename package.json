@@ -26,6 +26,6 @@
     "url": "https://github.com/thlorenz/6bit-encoder/blob/master/LICENSE"
   },
   "engine": {
-    "node": ">=0.10"
+    "node": ">=6"
   }
 }
