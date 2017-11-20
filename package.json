@@ -1,6 +1,6 @@
 {
   "name": "6bit-encoder",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Encodes 6bit numbers (0..63) to URL safe chars.",
   "main": "6bit-encoder.js",
   "scripts": {
