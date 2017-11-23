@@ -13,6 +13,15 @@ const ENCODE_OUTOFBOUNDS = 'The number to be encoded is out of bounds '
  */
 const SEPARATOR = '*'
 
+/**
+ * Remaining URL safe chars that are not part of the encoding table and
+ * can be used as a separator: `; , . ~ ( ' ) ! * : @`
+ *
+ * @constant {Array.<String>} SEPARATORS
+ * @default
+ */
+const SEPARATORS = '; , . ~ ( \' ) ! * : @'.split(' ')
+
 function maskForBits(n) {
   return (0b1 << n) - 1
 }
@@ -30,7 +39,7 @@ function getDecodingTable(arr) {
 }
 
 // Based on: https://stackoverflow.com/a/40415059/97443 the following are safe
-// A-Z a-z 0-9 - . _ ~ ( ) ' ! * : @ ,
+// A-Z a-z 0-9 - . _ ~ ( ) ' ! * : @ , ;
 // safe+unsafe: ; $ - _ . + ! * ' ( ),
 // Also see: http://www.blooberry.com/indexdot/html/topics/urlencoding.htm
 // Two major differences to standard base64: (http://www.motobit.com/util/wiki/Base64)
@@ -256,4 +265,5 @@ module.exports = {
   , decode5
   , decodeFor
   , SEPARATOR
+  , SEPARATORS
 }

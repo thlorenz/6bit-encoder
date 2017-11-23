@@ -20,21 +20,21 @@ assert.equal(decode5('VVVVV'), 0b011111011111011111011111011111)
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [API](#api)
-  - [SEPARATOR](#separator)
-  - [decode](#decode)
-  - [decode2](#decode2)
-  - [decode3](#decode3)
-  - [decode4](#decode4)
-  - [decode5](#decode5)
-  - [encode](#encode)
-  - [encode2](#encode2)
-  - [encode3](#encode3)
-  - [encode4](#encode4)
-  - [encode5](#encode5)
-  - [decodeFor](#decodefor)
-  - [encodeFor](#encodefor)
-- [License](#license)
+-   [API](#api)
+    -   [SEPARATOR](#separator)
+    -   [decode](#decode)
+    -   [decode2](#decode2)
+    -   [decode3](#decode3)
+    -   [decode4](#decode4)
+    -   [decode5](#decode5)
+    -   [encode](#encode)
+    -   [encode2](#encode2)
+    -   [encode3](#encode3)
+    -   [encode4](#encode4)
+    -   [encode5](#encode5)
+    -   [decodeFor](#decodefor)
+    -   [encodeFor](#encodefor)
+-   [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -48,6 +48,13 @@ A URL safe char that is not part of the encoding table and
 can be used as a separator: `'*'`
 
 Type: [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+### SEPARATORS
+
+Remaining URL safe chars that are not part of the encoding table and
+can be used as a separator: `; , . ~ ( ' ) ! * : @`
+
+Type: [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
 ### decode
 
